@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>User Information</h2>
+      <form id="UserInfo">
+        <div class="form-group">
+          <label for="user_type" class="form-label">User Type</label>
+          <input
+            type="user_type"
+            placeholder="Enter user type"
+            class="form-control"
+            id="user_type"
+            style="background-color: #f0f0f0"
+            aria-describedby="user_type"
+          />
+        </div>
+        <div class="form-group">
+          <label for="group_typeid" class="form-label">First Name</label>
+          <input
+            type="first_name"
+            placeholder="Enter First Name"
+            class="form-control"
+            style="background-color: #f0f0f0"
+            id="first_name"
+            aria-describedby="first_name Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="group_typeid" class="form-label">Last Name</label>
+          <input
+            type="last_name"
+            placeholder="Enter Last Name"
+            id="last_name"
+            style="background-color: #f0f0f0"
+            class="form-control"
+            aria-describedby="last_name Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email_address" class="form-label">Email</label>
+          <input
+            type="email_address"
+            placeholder="Enter Email Address"
+            id="email_address"
+            style="background-color: #f0f0f0"
+            class="form-control"
+            id="email_address"
+            aria-describedby="email_address Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            style="background-color: #f0f0f0"
+            placeholder="Enter password"
+            class="form-control"
+            id="password"
+            aria-describedby="password Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Conform Password</label>
+          <input
+            type="password"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Conform password"
+            class="form-control"
+            id="password"
+            aria-describedby="password Help"
+          />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="UserInfo()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="Userinfom.js"></script>
+  </body>
+</html>

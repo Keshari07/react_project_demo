@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add User Type</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Add User Type</h2>
+      <form id="registerUser">
+        <div class="form-group">
+          <label for="user_id" class="form-label">User ID</label>
+          <input
+            type="user_id"
+            placeholder="Enter user Id"
+            class="form-control"
+            id="user_id"
+            style="background-color: #f0f0f0"
+            aria-describedby="user_id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="userType">User Type:</label>
+          <select class="form-control" id="userType" name="userType">
+            <option value="Select">Select The User Type</option>
+            <option value="regular">Regular User</option>
+            <option value="outsource">Outsource User</option>
+            <option value="students">Students</option>
+            <option value="intern">Intern</option>
+            <option value="apprentice">Apprentice</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="registerUser()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="addusertype.js"></script>
+  </body>
+</html>

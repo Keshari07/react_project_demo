@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asset Information Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Asset Information Form</h2>
+      <form id="assetInfoForm">
+        <div class="form-group">
+          <label for="user_id" class="form-label">User ID</label>
+          <input
+            type="user_id"
+            placeholder="Enter user Id"
+            class="form-control"
+            id="user_id"
+            style="background-color: #f0f0f0"
+            aria-describedby="user_id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="asset_type" class="form-label">Asset Type</label>
+          <input
+            type="asset_type"
+            placeholder="Enter asset_type"
+            class="form-control"
+            style="background-color: #f0f0f0"
+            id="asset_type"
+            aria-describedby="asset_type Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="asset_name" class="form-label">Asset Name</label>
+          <input
+            type="asset_name"
+            placeholder="Enter The Asset Name"
+            id="asset_name"
+            style="background-color: #f0f0f0"
+            class="form-control"
+            aria-describedby="asset_name Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="asset_identifier" class="form-label"
+            >Asset Identifier</label
+          >
+          <input
+            type="asset_identifier"
+            placeholder="Enter Asset Identifier"
+            id="asset_identifier"
+            style="background-color: #f0f0f0"
+            class="form-control"
+            id="asset_identifier"
+            aria-describedby="asset_identifier Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="custodian" class="form-label">Custodian</label>
+          <input
+            type="custodian"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Custodian"
+            class="form-control"
+            id="custodian"
+            aria-describedby="custodian Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="user_type" class="form-label">User Type</label>
+          <input
+            type="user_type"
+            style="background-color: #f0f0f0"
+            placeholder="Enter User Type"
+            class="form-control"
+            id="user_type"
+            aria-describedby="user_type Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="asset_description" class="form-label"
+            >Asset Description</label
+          >
+          <input
+            type="asset_description"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Asset Description"
+            class="form-control"
+            id="asset_description"
+            aria-describedby="asset_description Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="location" class="form-label">Location</label>
+          <input
+            type="location"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Location"
+            class="form-control"
+            id="location"
+            aria-describedby="location Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="security_classification" class="form-label"
+            >Security Classification</label
+          >
+          <input
+            type="security_classification"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Security Classification"
+            class="form-control"
+            id="security_classification"
+            aria-describedby="security_classification Help"
+          />
+        </div>
+        <div class="form-group">
+          <label for="backup_location" class="form-label"
+            >Backup Location</label
+          >
+          <input
+            type="backup_location"
+            style="background-color: #f0f0f0"
+            placeholder="Enter Backup Location"
+            class="form-control"
+            id="backup_location"
+            aria-describedby="backup_location Help"
+          />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="assetInfoForm()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="AssetInformation.js"></script>
+  </body>
+</html>

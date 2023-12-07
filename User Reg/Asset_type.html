@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Asset Type</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Add Asset Type</h2>
+      <form id="asset_typeForm">
+        <div class="form-group">
+          <div class="form-group">
+          <label for="asset_id" class="form-label">Asset ID</label>
+          <input
+            type="asset_id"
+            placeholder="Enter Asset Id"
+            class="form-control"
+            id="asset_id"
+            style="background-color: #f0f0f0"
+            aria-describedby="asset_id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="asset_type">Asset Type</label>
+          <select class="form-control" id="grouptype" name="grouptype">
+            <option value="Select">Select Asset Type</option>
+            <option value="data_information">Data / Information</option>
+            <option value="infrastructure_systems_hardware">
+              Infrastructure Systems (Hardware’s)
+            </option>
+            <option value="software_applications">
+              Software/ Applications
+            </option>
+            <option value="support_systems">Support Systems</option>
+            <option value="service">Service</option>
+            <option value="netOps">Personnel</option>
+            <option value="physical_media">Physical Media</option>
+            <option value="facilities">Facilities</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="asset_typeForm()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="Asset_type.js"></script>
+  </body>
+</html>

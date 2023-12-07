@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Group Type</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Add Group Type</h2>
+      <form id="groupUser">
+        <div class="form-group">
+          <label for="group_Id" class="form-label">Group Id</label>
+          <input
+            type="group_Id"
+            placeholder="Enter Group Id"
+            class="form-control"
+            id="group_Id"
+            style="background-color: #f0f0f0"
+            aria-describedby="group_Id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="grouptype">Group Type:</label>
+          <select class="form-control" id="grouptype" name="group_type">
+            <option value="Select">Select Group Type</option>
+            <option value="Software">Software</option>
+            <option value="netOps">NetOps</option>
+            <option value="students">Hardware</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="groupUser()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="addGroup.js"></script>
+  </body>
+</html>

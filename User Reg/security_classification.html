@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Asset Type</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Add Asset Type</h2>
+      <form id="asset_typeForm">
+        <div class="form-group">
+          <div class="form-group">
+          <label for="securityclassification_Id" class="form-label">Security Classification ID</label>
+          <input
+            type="security_classification_Id"
+            placeholder="Enter Security Classification ID"
+            class="form-control"
+            id="security_classification_Id"
+            style="background-color: #f0f0f0"
+            aria-describedby="security_classification_Id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="security_classification_Type">Security Classification Type</label>
+          <select class="form-control" id="security_classification_Type" name="security_classification_Type">
+            <option value="Select">Select</option>
+            <option value="top_secret">Top Secret</option>
+            <option value="secret">Secret </option>
+            <option value="confidential">Confidential </option>
+            <option value="restricted">Restricted</option>
+            <option value="internal">Internal</option>
+            <option value="public">Public</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="security_classification_Type()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="security_classification.js"></script>
+  </body>
+</html>
